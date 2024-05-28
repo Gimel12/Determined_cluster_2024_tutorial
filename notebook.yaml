@@ -1,0 +1,9 @@
+description: "Jupyter Notebook with Custom Image"
+resources:
+  slots: 1
+environment:
+  image: my-custom-pytorch:21.06-py3
+  environment_variables:
+    - JUPYTER_ALLOW_INSECURE_WRITES=1
+  startup_hook: |
+    jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
