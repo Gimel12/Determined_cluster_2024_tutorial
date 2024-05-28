@@ -1,0 +1,4 @@
+master_host: 192.168.1.111
+master_port: 8080
+agent_id: agent1
+resource_pool: A6000_ADA
