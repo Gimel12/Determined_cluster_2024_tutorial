@@ -1,0 +1,15 @@
+db:
+  host: 127.0.0.1
+  port: 5432
+  user: postgres
+  password: root
+  name: determined
+port: 8080
+resource_pools:
+  - pool_name: A6000_ADA
+    max_zero_slot_containers_per_agent: 5
+    max_cpu_containers_per_agent: 5
+    max_gpu_containers_per_agent: 2
+checkpoint_storage:
+  type: shared_fs
+  host_path: /home/bizon/determined/checkpoints
